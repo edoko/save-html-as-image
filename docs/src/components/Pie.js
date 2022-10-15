@@ -1,8 +1,8 @@
-// install (please make sure versions match peerDependencies)
+// Install (please make sure versions match peerDependencies)
 // yarn add @nivo/core @nivo/pie
 import { ResponsivePie } from '@nivo/pie';
 
-// make sure parent container have a defined height when using
+// Make sure parent container have a defined height when using
 // responsive component, otherwise height will be 0 and
 // no chart will be rendered.
 // website examples showcase many properties,
@@ -18,7 +18,7 @@ const MyResponsivePie = ({ data /* see data tab */ }) => (
     borderWidth={1}
     borderColor={{
       from: 'color',
-      modifiers: [['darker', 0.2]],
+      modifiers: [['darker', 0.2]]
     }}
     arcLinkLabelsSkipAngle={10}
     arcLinkLabelsTextColor="#333333"
@@ -27,7 +27,7 @@ const MyResponsivePie = ({ data /* see data tab */ }) => (
     arcLabelsSkipAngle={10}
     arcLabelsTextColor={{
       from: 'color',
-      modifiers: [['darker', 2]],
+      modifiers: [['darker', 2]]
     }}
     defs={[
       {
@@ -37,7 +37,7 @@ const MyResponsivePie = ({ data /* see data tab */ }) => (
         color: 'rgba(255, 255, 255, 0.3)',
         size: 4,
         padding: 1,
-        stagger: true,
+        stagger: true
       },
       {
         id: 'lines',
@@ -46,58 +46,58 @@ const MyResponsivePie = ({ data /* see data tab */ }) => (
         color: 'rgba(255, 255, 255, 0.3)',
         rotation: -45,
         lineWidth: 6,
-        spacing: 10,
-      },
+        spacing: 10
+      }
     ]}
     fill={[
       {
         match: {
-          id: 'ruby',
+          id: 'ruby'
         },
-        id: 'dots',
+        id: 'dots'
       },
       {
         match: {
-          id: 'c',
+          id: 'c'
         },
-        id: 'dots',
+        id: 'dots'
       },
       {
         match: {
-          id: 'go',
+          id: 'go'
         },
-        id: 'dots',
+        id: 'dots'
       },
       {
         match: {
-          id: 'python',
+          id: 'python'
         },
-        id: 'dots',
+        id: 'dots'
       },
       {
         match: {
-          id: 'scala',
+          id: 'scala'
         },
-        id: 'lines',
+        id: 'lines'
       },
       {
         match: {
-          id: 'lisp',
+          id: 'lisp'
         },
-        id: 'lines',
+        id: 'lines'
       },
       {
         match: {
-          id: 'elixir',
+          id: 'elixir'
         },
-        id: 'lines',
+        id: 'lines'
       },
       {
         match: {
-          id: 'javascript',
+          id: 'javascript'
         },
-        id: 'lines',
-      },
+        id: 'lines'
+      }
     ]}
     legends={[
       {
@@ -118,11 +118,11 @@ const MyResponsivePie = ({ data /* see data tab */ }) => (
           {
             on: 'hover',
             style: {
-              itemTextColor: '#000',
-            },
-          },
-        ],
-      },
+              itemTextColor: '#000'
+            }
+          }
+        ]
+      }
     ]}
   />
 );

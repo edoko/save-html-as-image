@@ -1,12 +1,12 @@
 {
-  "name": "save-html-as-image",
-  "version": "1.7.1",
+  "name": "@edoko/save-html-as-image",
+  "version": "1.8.0",
   "description": "Save the html as image like png or jpg",
   "source": "src/index.js",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "scripts": {
-    "build": "yarn lint && rm -irf dist && microbundle --format cjs,esm",
+    "build": "rm -irf dist && microbundle --format cjs,esm",
     "dev": "microbundle watch",
     "lint": "xo --fix",
     "test": "xo"
@@ -29,16 +29,16 @@
     "snapshot",
     "screenshot"
   ],
-  "author": "Gustavo Chavarria",
+  "author": "edoko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gustavochavarria/save-html-as-image/issues"
+    "url": "https://github.com/edoko/save-html-as-image/issues"
   },
-  "homepage": "https://github.com/gustavochavarria/save-html-as-image#readme",
+  "homepage": "https://github.com/edoko/save-html-as-image#readme",
   "dependencies": {
-    "file-saver": "^2.0.5",
-    "html-to-image": "^1.9.0",
-    "save-svg-as-png": "^1.4.17"
+    "file-saver": "2.0.5",
+    "html-to-image": "1.10.8",
+    "save-svg-as-png": "1.4.17"
   },
   "devDependencies": {
     "microbundle": "^0.14.2",

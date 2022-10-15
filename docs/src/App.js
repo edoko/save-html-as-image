@@ -6,7 +6,7 @@ import {
   Grid,
   Heading,
   Icon,
-  Image,
+  Image
 } from '@chakra-ui/react';
 import { saveAs } from 'file-saver';
 
@@ -21,37 +21,37 @@ const data = [
     id: 'make',
     label: 'make',
     value: 124,
-    color: 'hsl(285, 70%, 50%)',
+    color: 'hsl(285, 70%, 50%)'
   },
   {
     id: 'python',
     label: 'python',
     value: 433,
-    color: 'hsl(29, 70%, 50%)',
+    color: 'hsl(29, 70%, 50%)'
   },
   {
     id: 'php',
     label: 'php',
     value: 444,
-    color: 'hsl(151, 70%, 50%)',
+    color: 'hsl(151, 70%, 50%)'
   },
   {
     id: 'hack',
     label: 'hack',
     value: 489,
-    color: 'hsl(264, 70%, 50%)',
+    color: 'hsl(264, 70%, 50%)'
   },
   {
     id: 'haskell',
     label: 'haskell',
     value: 571,
-    color: 'hsl(347, 70%, 50%)',
-  },
+    color: 'hsl(347, 70%, 50%)'
+  }
 ];
 
 function App() {
   const handleDownloadAsImage = (method) => {
-    const element = document.getElementById('download-area');
+    const element = document.querySelector('#download-area');
 
     if (method === 'png') {
       saveAsPng(element, {}, { backgroundColor: 'white' });

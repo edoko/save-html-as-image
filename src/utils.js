@@ -172,10 +172,25 @@ const removeElements = (node) => {
 };
 
 const recoveryElements = (node) => {
-  const els = node.querySelectorAll(['.remove-when-downloading']);
+  const els = node.querySelectorAll([
+    '.remove-when-downloading',
+    '.visible-when-downloading'
+  ]);
 
   for (const element of els) {
     element.style.display = element.getAttribute('original_display');
+  }
+};
+
+const visibleElements = (node) => {
+  const els = node.querySelectorAll(['.visible-when-downloading']);
+
+  for (const element of els) {
+    element.setAttribute(
+      'original_display',
+      window.getComputedStyle(element).display
+    );
+    element.style.display = 'flex';
   }
 };
 
@@ -206,6 +221,7 @@ export const scaffolding = async (
   applyFixs(node, options.forceFixText);
 
   removeElements(node);
+  visibleElements(node);
 
   try {
     canvas = await callback();
