@@ -1,5 +1,5 @@
 {
-  "name": "@edoko/save-html-as-image",
+  "name": "save-html-as-image",
   "version": "1.8.0",
   "description": "Save the html as image like png or jpg",
   "source": "src/index.js",
