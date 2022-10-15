@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gustavochavarria/save-html-as-image.git"
+    "url": "git+https://github.com/edoko/save-html-as-image.git"
   },
   "keywords": [
     "convert html to image png or jpg",
